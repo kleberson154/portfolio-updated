@@ -1,7 +1,7 @@
 import React from 'react'
 import './App.css'
 import Blur from './components/blur/Blur'
-import Header from './components/Header/Header'
+import Header from './components/header/Header'
 import Nav from './components/nav/Nav'
 import About from './components/about/About'
 import Experience from './components/Experience/Experience'

@@ -1,0 +1,153 @@
+#experience{
+  height: 33rem;
+}
+
+.experience__container {
+  display: flex;
+  justify-content: center;
+}
+
+.experience__container > div{
+  background: var(--color-bg-variant);
+  padding: 2.4rem 5rem;
+  border-radius: 2rem;
+  border: 1px solid transparent;
+  transition: var(--transition);
+  backdrop-filter: blur(9px);
+}
+
+.experience__container > h3{
+  text-align: center;
+  margin-bottom: 2rem;
+  color: var(--color-primary);
+}
+
+h3{
+  display: flex;
+  justify-content: center;
+  padding-bottom: 3rem;
+}
+
+.experience__content{
+  display: flex;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.raimbow{
+  width: 154px;
+  height: 154px;
+  transform: translate(0%,0%);
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 25px 30px rgba(0,0,0,0.3);
+  overflow: hidden;
+}
+
+.raimbow:before{
+  content: '';
+  width: 258px;
+  height: 258px;
+  position: absolute;
+  background: conic-gradient(
+    #fd004c,
+    #fe9000,
+    #fff020,
+    #3edf4b,
+    #3363ff,
+    #b102b7,
+    #fd004c
+  );
+  animation: spin 1.5s infinite linear;
+}
+@keyframes spin{
+  100%{
+    transform: rotate(-360deg);
+  }
+}
+
+
+.experience__details{
+  display: flex;
+  position: absolute;
+  gap: 1rem;
+  align-items: center;
+  text-align: center;
+  border-radius: 17px;
+  width: 9rem;
+  height: 9rem;
+  flex-direction: column;
+  justify-content: center;
+  background: #000000b3;
+    backdrop-filter: blur(100px);
+}
+
+.experience__details-icon {
+  margin-top: 6px;
+}
+
+#html-icon{
+  color: orangered;
+}
+
+#css-icon{
+  color: rgb(0, 81, 255);
+}
+
+#javaS-icon{
+  color: rgb(255, 196, 0);
+}
+
+#react-icon{
+  color: rgb(0, 247, 255);
+}
+
+#boot-icon{
+  color: rgb(132, 0, 255);
+}
+
+#figma-icon{
+  color: rgb(50 251 47);;
+}
+
+/* =========== MEDIA QUERIES (MEDIUM DEVICES) ===========*/
+@media screen and (max-width: 1245px){
+  #experience{
+    height: 58rem;
+  }
+  
+  .experience__container{
+    flex-direction: column;
+    align-items: center;
+  }
+  h3{
+    flex-direction: column;
+    align-items: center;
+  }
+  .experience__content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3.2rem;
+  }
+}
+
+@media screen and (max-width: 1024px){
+  #experience{
+    height: 57rem;
+  }
+}
+
+/* =========== MEDIA QUERIES (SMALL DEVICES) ===========*/
+@media screen and (max-width: 600px){
+  #experience{
+    height: 95rem;
+  }
+  
+  .experience__content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
